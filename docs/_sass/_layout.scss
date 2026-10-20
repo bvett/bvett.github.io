@@ -30,8 +30,17 @@ body {
 		float: left;
 		color: $header-fg;
 		text-decoration: none;
-		font-size: $base-font-size;
+		font-size: $title-font-size;
 		line-height: $base-font-size * 2;
+	}
+
+	.site-byline {
+		float: left;
+		color: $header-fg;
+		text-decoration: none;
+		font-size: $byline-font-size;
+		line-height: $base-font-size * 2;
+		font-style: italic;
 	}
 	.site-nav {
 		text-align:right;
@@ -197,22 +206,25 @@ $hide-sidebar-screen-width: 1120px;
 		display: block;
 	}
 	.name {
-		font-size: $base-font-size;
+		font-size: $name-font-size;
+		font-weight: bold;
+		color:#666
 	}
 	.contact {
 		margin-top: 10px;
+		display: flex;
+		gap: 4px;
+		align-items: center;
+		justify-content: center;
+		
+		img {
+			width: 24px;
+			height: 24px;
+		}
+
 		a {
-			background: #999;
-			color: #eee;
-			padding: 5px 10px;
-			text-decoration: none;
-			border-radius: 5px;
-    		white-space: nowrap;
-			
-			&:hover {
-				transition: background 0.3s ease;
-				background: #666;
-			}
+			font-size: $small-font-size;
+			height: 24px;
 		}
 	}
 }

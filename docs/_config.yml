@@ -4,12 +4,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Signal Matters
+title: Impedance Mismatches
 email: bvetter@gmail.com
 author: Brian Vetter
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Helping developers focus on creation rather than facilitation.
+  Conserving the energy of software development 
 github_username: bvett
 domain: bvett.github.io
 # baseurl: /docs # the subpath of your site, e.g. /blog
@@ -19,14 +19,20 @@ url:  https://bvett.github.io # the base hostname & protocol for your site, e.g.
 avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
 profile: Software Engineer specializing in SDLC automation and developer productivity.
 profile_links:
-  Email: "mailto:bvett@gmail.com"
+  - name: "GitHub"
+    url: "https://github.com/bvett"
+    icon: "/images/GitHub_Invertocat_Black_Clearspace.svg"
+  - name: "LinkedIn"
+    url: "https://linkedin.com/in/bvett"
+    icon: "/images/LI-In-Bug.png"
+  - name: "bvetter@gmail.com"
+    url: "mailto:bvetter@gmail.com" 
 
 excerpt_separator: <!--more-->
 
 header:
-  links:             # Links on the header. Link to in-site page with a slash as prefix
-    About: /about/
-    Category: /category/
+  links:
+    About the Blog: /about-the-blog/
 
 permalink: /articles/:title
 plugins:

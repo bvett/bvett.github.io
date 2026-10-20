@@ -2,19 +2,18 @@
   <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}">
   <div class="col-box-title name">{{ site.author }}</div>
   <p>{{ site.profile }}</p>
-  <p class="contact">
-    {% if site.github_username %}
-    <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-    {% endif %}
-    {% if site.twitter_username %}
-    <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
-    {% endif %}
+  <div class="contact">
     {% for link in site.profile_links %}
-    <a href="{{ link | last }}">{{ link | first }}</a>
+      {% if link.icon %}
+        <a href="{{ link.url }}"><img src="{{ link.icon  }}" alt="{{ link.name }}"/></a>
+      {% elsif link.name %}
+        <a href="{{ link.url }}">{{ link.name }}</a>
+      {% else %}
+        <a href="{{ link.url }}">{{ link.url }}</a>
+      {% endif %}
     {% endfor %}
-  </p>
+  </div>
 </div>
-
 <div class="col-box">
   <div class="col-box-title">Newest Posts</div>
   <ul class="post-list">
