@@ -33,6 +33,7 @@ excerpt_separator: <!--more-->
 header:
   links:
     About the Blog: /about-the-blog/
+    About the Author: /about-the-author/
 
 permalink: /articles/:title
 plugins:
