@@ -34,6 +34,7 @@ header:
   links:
     About the Blog: /about-the-blog/
     About the Author: /about-the-author/
+    Value Stream Simulator: https://github.com/bvett/value-stream-simulator
 
 permalink: /articles/:title
 plugins:

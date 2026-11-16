@@ -14,7 +14,7 @@ body {
 
 .header {
 	line-height: $base-font-size * 2;
-	background-color: $header-bg;
+	background: linear-gradient(90deg, rgba(37, 23, 64, 1) 11%, rgba(75, 78, 179, 1) 50%, rgba(37, 23, 64, 1) 90%);
 	padding: 10px;
 	margin: 0;
 	
