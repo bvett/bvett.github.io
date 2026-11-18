@@ -16,7 +16,7 @@ domain: bvett.github.io
 url:  https://bvett.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
 
-avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+avatar: "/images/profile_1200.png"
 profile: Software Engineer specializing in SDLC automation and developer productivity.
 profile_links:
   - name: "GitHub"
